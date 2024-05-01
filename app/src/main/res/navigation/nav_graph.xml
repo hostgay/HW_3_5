@@ -1,0 +1,25 @@
+<!-- nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/CounterFragment">
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/CounterFragment"
+        android:name="com.example.hw_3_5.CounterFragment"
+        android:label="Counter Fragment"
+        tools:layout="@layout/fragment_counter">
+
+        <action
+            android:id="@+id/action_counterFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/resultFragment"
+        android:name="com.example.hw_3_5.ResultFragment"
+        android:label="Result Fragment"
+        tools:layout="@layout/fragment_result">
+    </fragment>
+
+</navigation>
